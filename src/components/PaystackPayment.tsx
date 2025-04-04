@@ -18,7 +18,7 @@ const PaystackPayment: React.FC<PaystackPaymentProps> = ({
   onPaymentStart,
   onPaymentCancel
 }) => {
-  const [isVerifying, setIsVerifying] = useState(false);
+  const [isVerifying] = useState(false);
   const navigate = useNavigate();
 
   // Function to open Paystack payment page

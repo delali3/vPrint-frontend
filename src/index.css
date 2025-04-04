@@ -1,0 +1,100 @@
+/* Add this to your global CSS file (index.css or globals.css) */
+
+:root {
+  /* Light theme variables */
+  --background: 255, 255, 255;
+  --foreground: 15, 23, 42;
+  --card: 255, 255, 255;
+  --card-foreground: 15, 23, 42;
+  --popover: 255, 255, 255;
+  --popover-foreground: 15, 23, 42;
+  --primary: 124, 58, 237;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 241, 245, 249;
+  --secondary-foreground: 15, 23, 42;
+  --muted: 241, 245, 249;
+  --muted-foreground: 100, 116, 139;
+  --accent: 241, 245, 249;
+  --accent-foreground: 15, 23, 42;
+  --destructive: 239, 68, 68;
+  --destructive-foreground: 255, 255, 255;
+  --border: 226, 232, 240;
+  --input: 226, 232, 240;
+  --ring: 124, 58, 237;
+}
+
+.dark {
+  /* Dark theme variables */
+  --background: 15, 23, 42;
+  --foreground: 226, 232, 240;
+  --card: 31, 41, 55;
+  --card-foreground: 255, 255, 255;
+  --popover: 31, 41, 55;
+  --popover-foreground: 255, 255, 255;
+  --primary: 124, 58, 237;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 51, 65, 85;
+  --secondary-foreground: 255, 255, 255;
+  --muted: 51, 65, 85;
+  --muted-foreground: 148, 163, 184;
+  --accent: 51, 65, 85;
+  --accent-foreground: 255, 255, 255;
+  --destructive: 239, 68, 68;
+  --destructive-foreground: 255, 255, 255;
+  --border: 51, 65, 85;
+  --input: 51, 65, 85;
+  --ring: 124, 58, 237;
+}
+
+/* Apply variables to tailwind elements */
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+/* Dark mode styles for our application */
+.dark body {
+  background-color: rgb(15, 23, 42);
+  color: rgb(226, 232, 240);
+}
+
+.dark .bg-white {
+  background-color: rgb(31, 41, 55);
+}
+
+.dark .bg-gray-50 {
+  background-color: rgb(31, 41, 55);
+}
+
+.dark .bg-gray-100 {
+  background-color: rgb(51, 65, 85);
+}
+
+.dark .border-gray-200 {
+  border-color: rgb(51, 65, 85);
+}
+
+.dark .text-gray-700 {
+  color: rgb(226, 232, 240);
+}
+
+.dark .text-gray-800 {
+  color: rgb(241, 245, 249);
+}
+
+.dark .text-gray-900 {
+  color: rgb(248, 250, 252);
+}
+
+/* Utility classes for theme transitions */
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}

@@ -11,7 +11,7 @@ import { usePrinting } from '../context/PrintingContext';
 import { generateReceiptData, downloadReceipt, ReceiptData } from '../utils/receiptGenerator';
 import { submitOrder } from '../services/api';
 
-type OrderStep = 'uploa d' | 'user-info' | 'review' | 'payment' | 'confirmation';
+type OrderStep = 'upload' | 'user-info' | 'review' | 'payment' | 'confirmation';
 
 const PrintingPage: React.FC = () => {
   const { currentOrder, setCurrentOrder, addToOrderHistory } = usePrinting();
